@@ -12,6 +12,11 @@ const FormSchema = z.object({
   date: z.string(),
 });
 
+export type State = {
+  message: string;
+  errors: string;
+};
+
 const CreateInvoice = FormSchema.omit({ id: true, date: true });
 
 export async function createInvoice(formData: FormData) {
