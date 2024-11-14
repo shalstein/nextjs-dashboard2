@@ -118,3 +118,10 @@ export async function deleteInvoice(id: string) {
 
   revalidatePath("/dashboard/invoices");
 }
+
+export async function barAction(prevState: number | null, formData: FormData) {
+  const number1 = Number(formData.get("number1"));
+  const number2 = Number(formData.get("number2"));
+  const result = number1 + number2;
+  return result;
+}
