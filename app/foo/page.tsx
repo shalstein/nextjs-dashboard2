@@ -1,8 +1,13 @@
-"use client";
 import { barAction } from "../lib/actions";
 import { useActionState } from "react";
+
+export const metadata: Metadata = {
+  title: "Foo",
+};
+import { Metadata } from "next";
 export default function Page() {
   //  const [results, formAction] = useActionState(barAction, undefined);
+
   console.log("hello from foo");
   return (
     <>
