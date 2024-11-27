@@ -1,5 +1,5 @@
-import { barAction } from "../lib/actions";
-import { useActionState } from "react";
+//import { barAction } from "../lib/actions";
+//import { useActionState } from "react";
 
 export const metadata: Metadata = {
   title: "Foo",
